@@ -49,9 +49,14 @@ Build a store upload zip (excludes tests and git metadata):
 npm run package
 ```
 
-Upload `dist/japanese-selection-dictionary.zip` in the
-[Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
-Use the privacy policy URL above in the store listing questionnaire.
+Upload **only** the generated file:
+
+`dist/japanese-selection-dictionary.zip`
+
+Do not Finder-compress the project folder — that often nests files under an extra directory and breaks icon paths. Re-run `npm run package` after any icon or manifest change, then upload the new zip from `dist/`.
+
+Use the privacy policy URL above in the store listing questionnaire
+([Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)).
 
 ## License
 
