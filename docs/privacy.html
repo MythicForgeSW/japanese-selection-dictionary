@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy — Japanese Selection Dictionary</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2428;
+        --muted: #5a6a72;
+        --bg: #f7f5f1;
+        --card: #ffffff;
+        --accent: #0f6b6b;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font: 16px/1.55 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+        color: var(--ink);
+        background:
+          radial-gradient(ellipse at top left, rgba(15, 107, 107, 0.08), transparent 55%),
+          linear-gradient(180deg, #eef3f2 0%, var(--bg) 40%, #f3efe8 100%);
+        min-height: 100vh;
+      }
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem 4rem;
+      }
+      h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0 0 0.35rem;
+        letter-spacing: -0.02em;
+      }
+      .meta {
+        color: var(--muted);
+        margin: 0 0 2rem;
+        font-size: 0.95rem;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 1.75rem 0 0.5rem;
+        color: var(--accent);
+      }
+      p, li { margin: 0 0 0.75rem; }
+      ul { padding-left: 1.2rem; }
+      a { color: var(--accent); }
+      footer {
+        margin-top: 2.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(28, 36, 40, 0.12);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Japanese Selection Dictionary · Effective August 2, 2026</p>
+
+      <p>
+        This policy describes how the Japanese Selection Dictionary Chrome
+        extension (“the Extension”) handles information. The Extension is
+        published by MythicForgeSW.
+      </p>
+
+      <h2>What the Extension does</h2>
+      <p>
+        When you select Japanese text on a web page, the Extension may look up
+        that selection and show readings and English meanings in a bubble next
+        to the selection.
+      </p>
+
+      <h2>Information processed</h2>
+      <ul>
+        <li>
+          <strong>Selected text you choose to look up.</strong> The Extension
+          reads text you highlight on the active page only for the purpose of
+          dictionary lookup.
+        </li>
+        <li>
+          <strong>No accounts.</strong> The Extension does not require sign-in
+          and does not create user profiles.
+        </li>
+        <li>
+          <strong>No intentional local vocabulary storage.</strong> The
+          Extension does not save a personal word list, browsing history, or
+          account data in extension storage.
+        </li>
+      </ul>
+
+      <h2>Network requests</h2>
+      <p>
+        To fetch definitions, the Extension sends the selected query text to
+        the public Jisho word-search API at
+        <code>https://jisho.org/api/v1/search/words</code>.
+        Jisho’s own privacy practices apply to data it receives.
+      </p>
+
+      <h2>Page access</h2>
+      <p>
+        The Extension runs on ordinary <code>http://</code> and
+        <code>https://</code> pages so it can detect text selections and show
+        the definition bubble. It does not sell page content and does not use
+        page content for advertising.
+      </p>
+
+      <h2>Data sharing and sale</h2>
+      <p>
+        The Extension does not sell personal information. Selected query text
+        is shared with Jisho solely to return dictionary results. The Extension
+        author does not operate a separate analytics or advertising backend for
+        this product.
+      </p>
+
+      <h2>Children’s privacy</h2>
+      <p>
+        The Extension is not directed at children under 13, and it does not
+        knowingly collect personal information from children.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes in a material way, the effective date at the top
+        of this page will be updated.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy can be opened as an issue on the public
+        repository:
+        <a href="https://github.com/MythicForgeSW/japanese-selection-dictionary">
+          github.com/MythicForgeSW/japanese-selection-dictionary
+        </a>.
+      </p>
+
+      <footer>
+        Source code is available under the MIT License.
+      </footer>
+    </main>
+  </body>
+</html>
